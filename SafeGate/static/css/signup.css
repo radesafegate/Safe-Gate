@@ -1,0 +1,60 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #f0f2f5;
+}
+.Create-acc
+{
+font-family: arial;
+position: absolute;
+width: 400px;
+box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+background-color: #fff;
+padding: 20px;
+margin-top: 100px  ;
+margin-left: 400px;
+text-align: center;
+
+}
+
+
+.Login-btn{
+	font-weight: 540;
+	background-color: #06bb5c;
+	width: 100%;
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 15px;
+	margin: 10px 10px;
+	border:none;
+	outline:none;
+	cursor: pointer;  
+}
+.Login-btn:hover{
+	background:linear-gradient(#6fad5a,#66a150,#60974c);
+}
+a{
+	text-decoration: none;
+}
+
+
+section{
+	height: 614px;
+	width: 100%;
+	top: 80px;
+	background: linear-gradient(#FDFDFE,#EFF1F6,#E3E6f0,#D6DBEA);
+	font-family: verdana;
+}
+
+
+
+.Input{
+	border-radius: 20px;
+padding: 10px;
+margin: 10px;
+width: 90%;
+border: 1px solid #999;
+outline: none; 
+text-align: center;
+
+}

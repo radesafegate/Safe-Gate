@@ -1,0 +1,25 @@
+img{
+    width: 70%;
+}
+.nav {
+	position: sticky;
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	height:60px;
+	top: 0;      
+	background: #fff;          
+}
+.nav__item{
+	display: inline-block;
+	margin: 0px 30px;
+			}
+.nav__title{
+	color: green;
+	font-size: 20px;
+}
+.log_out{
+	text-decoration: none;
+	color: red;
+}
+

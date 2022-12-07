@@ -1,0 +1,76 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #f0f2f5;
+}
+.Sign-up-form
+{
+font-family: arial;
+position: absolute;
+left: 57%;	
+box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+background-color: #fff;
+padding: 20px;
+margin: 8% auto 0;
+text-align: center;
+width: 300px;
+height: 400px;
+text-align: left;
+
+}
+.Sign-up-form h1{
+color: #06bb5c;
+margin-bottom:30px; 
+text-align: center;
+}
+.input-box{
+border-radius: 20px;
+padding: 10px;
+margin: 10px;
+width: 90%;
+border: 1px solid #999;
+outline: none; 
+}
+.Login-btn{
+	font-weight: 540;
+	background-color: #06bb5c;
+	width: 100%;
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 15px;
+	margin: 10px 10px;
+	border:none;
+	outline:none;
+	cursor: pointer;  
+}
+.Login-btn:hover{
+	background:linear-gradient(#6fad5a,#66a150,#60974c);
+}
+a{
+	text-decoration: none;
+}
+hr{
+	margin-top: 20px;
+	width: 80%;
+	margin-left: 25px;
+}
+
+
+section{
+	height: 614px;
+	width: 100%;
+	top: 80px;
+	background: linear-gradient(#FDFDFE,#EFF1F6,#E3E6f0,#D6DBEA);
+	font-family: verdana;
+}
+.logo_body{
+	position: absolute;
+	left: 15%;
+	top: 18%;
+}
+.logo_body .like_font{
+	font-family: arial;
+	font-size: 25px;
+	margin-left: -30px;
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title> SafeGate Login </title>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}" type="text/css">	
+</head>
+<body>
+<section>
+	<div class="logo_body">
+		<img class="logobody" src="{{ url_for('static',filename='css/yarmouk.png')}}"> 
+		<p style="color: #06bb5c;font-weight: bold;" class="like_font font1">SafeGate</p>
+		<p class="like_font font1">For you to be safe and make the world safer</p>	
+	</div>
+	
+    
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+       {% for category, message in messages %}
+          <div style="color: red;" class="alert alert-{{ category }}">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+              {{ message }}
+          </div>
+       {% endfor %}
+    {% endif %}
+  {% endwith %}
+  {% block content %}
+
+  {% endblock %}
+	<div class="Sign-up-form">
+	<h1>SafeGate</h1>
+	<form  method="POST">
+		{{ form.hidden_tag() }}
+		{{ form.username.label() }}
+		{{ form.username(class="input-box", placeholder="User Name") }}
+
+		{{ form.password.label() }}
+		{{ form.password(class="input-box", placeholder="Password") }}
+
+		{{ form.submit(class="Login-btn") }}
+
+		<hr>
+		<button  class="Login-btn" ><a href="{{url_for('register')}}">Create account</a></button>
+
+    </form>
+			
+	</div>
+</section>	
+
+</body>
+</html>

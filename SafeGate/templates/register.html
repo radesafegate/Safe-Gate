@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> SafeGate Login or Signup </title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/signup.css')}}">
+</head>
+<body>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+       {% for category, message in messages %}
+          <div class="alert alert-{{ category }}">
+              <button type="button" class="m1-2 mb-1 close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+              {{ message }}
+          </div>
+       {% endfor %}
+    {% endif %}
+  {% endwith %}
+  {% block content %}
+
+  {% endblock %}
+    <section>
+<div class="Create-acc">
+    <form method="POST">
+        {{form.hidden_tag() }}
+	
+    {{form.username(class='Input',placeholder='User Name')}}
+
+   
+    {{form.email_address(class='Input',placeholder='Email')}}
+
+  
+    {{form.password(class='Input',placeholder='Password')}}
+
+  
+    {{form.confirm_password(class='Input',placeholder='Confirm Password')}}
+    <br>
+    <div class="checkbox mb-3">
+        <h6>Already have an account?</h6>
+        <a class="btn btn-sm btn-secondary" href="{{ url_for('login_page') }}">Login</a>
+     </div>
+    {{form.submit(class='Login-btn')}}
+    </form>
+</div>
+</section>
+    
+</body>
+</html>
